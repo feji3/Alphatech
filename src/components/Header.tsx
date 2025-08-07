@@ -5,9 +5,9 @@ const Header = () => {
   return (
     <header className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <div className="flex items-center space-x-2">
-          <Shield className="h-8 w-8 text-trust-gold" />
-          <span className="text-xl font-bold text-foreground">TruthSeeker Investigations</span>
+        <div className="flex items-center space-x-3">
+          <Shield className="h-8 w-8 text-alpha-blue" />
+          <span className="text-2xl font-bold text-alpha-charcoal tracking-tight">ALPHATECH</span>
         </div>
         
         <nav className="hidden md:flex items-center space-x-8">

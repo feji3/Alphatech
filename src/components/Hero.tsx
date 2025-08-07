@@ -1,61 +1,70 @@
 import { Button } from "@/components/ui/enhanced-button";
-import { Shield, Eye, Lock } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import { Shield, Eye, Lock, Search } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-        style={{ backgroundImage: `url(${heroBg})` }}
-      />
-      
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background/80" />
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-alpha-light via-background to-alpha-light overflow-hidden">
+      {/* Modern geometric background */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-alpha-blue rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-alpha-blue rounded-full blur-3xl"></div>
+      </div>
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center">
-        <div className="flex justify-center mb-8">
-          <div className="p-4 rounded-full bg-trust-gold/10 border border-trust-gold/20">
-            <Eye className="h-12 w-12 text-trust-gold" />
+      <div className="relative z-10 container mx-auto px-6 text-center max-w-6xl">
+        {/* Logo/Icon */}
+        <div className="flex justify-center mb-12">
+          <div className="relative p-6 rounded-2xl bg-alpha-blue/10 border border-alpha-blue/20 backdrop-blur-sm">
+            <Search className="h-16 w-16 text-alpha-blue" />
+            <div className="absolute -top-2 -right-2 w-6 h-6 bg-alpha-blue rounded-full animate-pulse"></div>
           </div>
         </div>
         
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-          <span className="text-foreground">Uncover The</span>
-          <br />
-          <span className="bg-gradient-accent bg-clip-text text-transparent">Truth</span>
-        </h1>
+        {/* Brand Name */}
+        <div className="mb-8">
+          <h1 className="text-6xl md:text-8xl font-bold text-alpha-charcoal mb-4 tracking-tight">
+            ALPHATECH
+          </h1>
+          <div className="w-32 h-1 bg-gradient-accent mx-auto rounded-full"></div>
+        </div>
         
-        <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-          Professional, discreet, and confidential investigation services. 
-          Get the answers you need with our expert digital forensics and surveillance team.
+        {/* Main Headline */}
+        <h2 className="text-3xl md:text-5xl font-light text-alpha-charcoal mb-8 leading-tight max-w-4xl mx-auto">
+          Professional Digital Investigation Services
+        </h2>
+        
+        <p className="text-lg md:text-xl text-alpha-grey mb-12 max-w-3xl mx-auto leading-relaxed font-light">
+          Discreet, confidential, and comprehensive digital investigations. 
+          Get the truth you need with our advanced forensics and surveillance technology.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <Button variant="cta" size="xl" className="w-full sm:w-auto">
-            Start Your Investigation
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+          <Button variant="cta" size="xl" className="w-full sm:w-auto px-12 py-4 text-lg">
+            Start Investigation
           </Button>
-          <Button variant="premium" size="xl" className="w-full sm:w-auto">
+          <Button variant="premium" size="xl" className="w-full sm:w-auto px-12 py-4 text-lg">
             <Shield className="h-5 w-5" />
-            100% Confidential
+            Free Consultation
           </Button>
         </div>
         
         {/* Trust Indicators */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          <div className="flex items-center justify-center space-x-3 p-4 rounded-lg bg-card/50 backdrop-blur border border-border">
-            <Lock className="h-6 w-6 text-trust-gold" />
-            <span className="text-foreground font-medium">Encrypted & Secure</span>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="flex flex-col items-center space-y-4 p-8 rounded-xl bg-alpha-white/80 backdrop-blur border border-alpha-blue/10 shadow-elegant hover:shadow-glow transition-smooth">
+            <Lock className="h-10 w-10 text-alpha-blue" />
+            <h3 className="text-lg font-semibold text-alpha-charcoal">Bank-Level Security</h3>
+            <p className="text-alpha-grey text-center text-sm">256-bit encrypted communications</p>
           </div>
-          <div className="flex items-center justify-center space-x-3 p-4 rounded-lg bg-card/50 backdrop-blur border border-border">
-            <Shield className="h-6 w-6 text-trust-gold" />
-            <span className="text-foreground font-medium">Licensed Professionals</span>
+          <div className="flex flex-col items-center space-y-4 p-8 rounded-xl bg-alpha-white/80 backdrop-blur border border-alpha-blue/10 shadow-elegant hover:shadow-glow transition-smooth">
+            <Shield className="h-10 w-10 text-alpha-blue" />
+            <h3 className="text-lg font-semibold text-alpha-charcoal">Licensed Experts</h3>
+            <p className="text-alpha-grey text-center text-sm">Certified digital forensics team</p>
           </div>
-          <div className="flex items-center justify-center space-x-3 p-4 rounded-lg bg-card/50 backdrop-blur border border-border">
-            <Eye className="h-6 w-6 text-trust-gold" />
-            <span className="text-foreground font-medium">24/7 Availability</span>
+          <div className="flex flex-col items-center space-y-4 p-8 rounded-xl bg-alpha-white/80 backdrop-blur border border-alpha-blue/10 shadow-elegant hover:shadow-glow transition-smooth">
+            <Eye className="h-10 w-10 text-alpha-blue" />
+            <h3 className="text-lg font-semibold text-alpha-charcoal">24/7 Support</h3>
+            <p className="text-alpha-grey text-center text-sm">Round-the-clock availability</p>
           </div>
         </div>
       </div>

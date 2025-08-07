@@ -62,11 +62,11 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				'trust-gold': 'hsl(var(--trust-gold))',
-				'deep-navy': 'hsl(var(--deep-navy))',
-				'steel-blue': 'hsl(var(--steel-blue))',
-				charcoal: 'hsl(var(--charcoal))',
-				platinum: 'hsl(var(--platinum))'
+				'alpha-blue': 'hsl(var(--alpha-blue))',
+				'alpha-charcoal': 'hsl(var(--alpha-charcoal))',
+				'alpha-grey': 'hsl(var(--alpha-grey))',
+				'alpha-light': 'hsl(var(--alpha-light))',
+				'alpha-white': 'hsl(var(--alpha-white))'
 			},
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',

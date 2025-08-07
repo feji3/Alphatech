@@ -8,55 +8,55 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 210 11% 6%;
-    --foreground: 210 11% 96%;
+    --background: 0 0% 100%;
+    --foreground: 210 15% 20%;
 
-    --card: 210 11% 8%;
-    --card-foreground: 210 11% 96%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 15% 20%;
 
-    --popover: 210 11% 8%;
-    --popover-foreground: 210 11% 96%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 15% 20%;
 
-    --primary: 45 100% 70%;
-    --primary-foreground: 210 11% 6%;
+    --primary: 210 50% 45%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 11% 12%;
-    --secondary-foreground: 210 11% 90%;
+    --secondary: 210 5% 95%;
+    --secondary-foreground: 210 15% 20%;
 
-    --muted: 210 11% 12%;
-    --muted-foreground: 210 11% 65%;
+    --muted: 210 5% 95%;
+    --muted-foreground: 210 10% 50%;
 
-    --accent: 210 11% 15%;
-    --accent-foreground: 210 11% 96%;
+    --accent: 210 5% 92%;
+    --accent-foreground: 210 15% 20%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 210 11% 15%;
-    --input: 210 11% 15%;
-    --ring: 45 100% 70%;
+    --border: 210 5% 88%;
+    --input: 210 5% 88%;
+    --ring: 210 50% 45%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    /* Investigation theme colors */
-    --trust-gold: 45 100% 70%;
-    --deep-navy: 210 25% 8%;
-    --steel-blue: 210 15% 20%;
-    --charcoal: 210 11% 6%;
-    --platinum: 210 11% 96%;
+    /* ALPHATECH modern theme colors */
+    --alpha-blue: 210 50% 45%;
+    --alpha-charcoal: 210 15% 20%;
+    --alpha-grey: 210 10% 50%;
+    --alpha-light: 210 5% 95%;
+    --alpha-white: 0 0% 100%;
 
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--deep-navy)), hsl(var(--charcoal)));
-    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--steel-blue)));
-    --gradient-accent: linear-gradient(90deg, hsl(var(--trust-gold)), hsl(45 90% 65%));
+    /* Modern gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--alpha-blue)), hsl(210 60% 35%));
+    --gradient-card: linear-gradient(145deg, hsl(var(--alpha-white)), hsl(var(--alpha-light)));
+    --gradient-accent: linear-gradient(90deg, hsl(var(--alpha-blue)), hsl(210 60% 55%));
 
-    /* Shadows */
-    --shadow-elegant: 0 25px 50px -12px hsl(210 11% 4% / 0.5);
-    --shadow-glow: 0 0 40px hsl(var(--trust-gold) / 0.1);
+    /* Modern shadows */
+    --shadow-elegant: 0 20px 40px -8px hsl(210 15% 20% / 0.1);
+    --shadow-glow: 0 0 30px hsl(var(--alpha-blue) / 0.15);
 
-    /* Animations */
-    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* Smooth animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
@@ -76,33 +76,33 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 210 15% 8%;
+    --foreground: 0 0% 98%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 210 15% 10%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 210 15% 10%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 210 50% 55%;
+    --primary-foreground: 210 15% 8%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 210 10% 15%;
+    --secondary-foreground: 0 0% 90%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 210 10% 15%;
+    --muted-foreground: 210 5% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 210 10% 18%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 210 10% 18%;
+    --input: 210 10% 18%;
+    --ring: 210 50% 55%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
