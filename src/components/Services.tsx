@@ -1,82 +1,104 @@
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/enhanced-button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Smartphone, Monitor, Camera, FileSearch, UserCheck, Globe } from "lucide-react";
+import { CreditCard, Shield, Smartphone, Users, Heart, CheckCircle } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
+      icon: CreditCard,
+      title: "Credit Repair Services",
+      description: "Comprehensive credit restoration and financial recovery solutions.",
+      features: [
+        "Credit report analysis",
+        "Dispute management",
+        "Score improvement strategies",
+        "Financial consultation"
+      ]
+    },
+    {
+      icon: Shield,
+      title: "Business & Family Protection",
+      description: "Complete protection services for your business and family assets.",
+      features: [
+        "Identity theft protection",
+        "Business security audits",
+        "Asset protection planning",
+        "Risk assessment"
+      ]
+    },
+    {
       icon: Smartphone,
-      title: "Digital Forensics",
-      description: "Comprehensive analysis of phones, computers, and digital devices to uncover hidden communications and deleted data.",
-      features: ["Text message recovery", "Social media investigation", "App usage analysis", "Location tracking"]
+      title: "Cell Phone Security",
+      description: "Advanced mobile device security and hack detection services.",
+      features: [
+        "Device security analysis",
+        "Malware detection",
+        "Privacy protection",
+        "Security hardening"
+      ]
     },
     {
-      icon: Monitor,
-      title: "Online Surveillance",
-      description: "Professional monitoring of online activities, dating profiles, and social media presence.",
-      features: ["Dating app monitoring", "Social media tracking", "Email investigation", "Online behavior analysis"]
+      icon: Users,
+      title: "Social Media Recovery",
+      description: "Professional account recovery and digital identity restoration.",
+      features: [
+        "Account recovery assistance",
+        "Identity verification",
+        "Security enhancement",
+        "Digital footprint cleanup"
+      ]
     },
     {
-      icon: Camera,
-      title: "Physical Surveillance",
-      description: "Discreet observation and documentation of activities with professional surveillance techniques.",
-      features: ["Photo documentation", "Video evidence", "Activity logs", "Pattern analysis"]
-    },
-    {
-      icon: FileSearch,
-      title: "Background Checks",
-      description: "Thorough investigation of personal history, relationships, and financial activities.",
-      features: ["Criminal background", "Employment verification", "Financial investigation", "Reference checks"]
-    },
-    {
-      icon: UserCheck,
-      title: "Loyalty Testing",
-      description: "Professional assessment of relationship commitment through controlled scenarios.",
-      features: ["Integrity testing", "Temptation scenarios", "Behavioral analysis", "Detailed reporting"]
-    },
-    {
-      icon: Globe,
-      title: "International Cases",
-      description: "Global investigation services for cases involving multiple countries or international travel.",
-      features: ["Cross-border tracking", "International partnerships", "Multi-language support", "Global databases"]
+      icon: Heart,
+      title: "Relationship Investigation",
+      description: "Discreet investigation services for relationship concerns and infidelity.",
+      features: [
+        "Digital forensics",
+        "Surveillance services",
+        "Evidence collection",
+        "Confidential reporting"
+      ]
     }
   ];
 
   return (
-    <section id="services" className="py-20 bg-gradient-to-b from-background to-steel-blue/10">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            <span className="text-foreground">Professional Investigation</span>
-            <br />
-            <span className="bg-gradient-accent bg-clip-text text-transparent">Services</span>
+    <section id="services" className="py-16 sm:py-20 lg:py-24 bg-alpha-light">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-alpha-charcoal mb-4 sm:mb-6">
+            Our Specialized Services
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Our comprehensive suite of investigation services uses cutting-edge technology and proven methodologies 
-            to provide you with the truth you seek.
+          <p className="text-lg sm:text-xl text-alpha-grey max-w-3xl mx-auto leading-relaxed px-4">
+            Comprehensive digital protection and investigation solutions tailored to your specific needs.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
           {services.map((service, index) => (
-            <Card key={index} className="bg-gradient-card border-border hover:border-trust-gold/30 transition-all duration-300 hover:shadow-glow group">
+            <Card key={index} className="bg-alpha-white border-alpha-blue/10 hover:shadow-glow transition-all duration-300 hover:scale-105 h-full">
               <CardHeader className="text-center pb-4">
-                <div className="mx-auto mb-4 p-3 rounded-full bg-trust-gold/10 border border-trust-gold/20 group-hover:bg-trust-gold/20 transition-colors duration-300">
-                  <service.icon className="h-8 w-8 text-trust-gold" />
+                <div className="flex justify-center mb-4">
+                  <div className="p-3 sm:p-4 rounded-full bg-alpha-blue/10">
+                    <service.icon className="h-8 w-8 sm:h-10 sm:w-10 text-alpha-blue" />
+                  </div>
                 </div>
-                <CardTitle className="text-xl font-bold text-foreground">{service.title}</CardTitle>
+                <CardTitle className="text-xl sm:text-2xl text-alpha-charcoal mb-2">
+                  {service.title}
+                </CardTitle>
+                <CardDescription className="text-alpha-grey text-base leading-relaxed">
+                  {service.description}
+                </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-muted-foreground leading-relaxed">{service.description}</p>
-                <ul className="space-y-2">
+              <CardContent className="pt-0">
+                <ul className="space-y-2 sm:space-y-3 mb-6">
                   {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-trust-gold mr-3 flex-shrink-0" />
-                      {feature}
+                    <li key={featureIndex} className="flex items-center space-x-3">
+                      <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-alpha-blue flex-shrink-0" />
+                      <span className="text-alpha-grey text-sm sm:text-base">{feature}</span>
                     </li>
                   ))}
                 </ul>
-                <Button variant="premium" className="w-full mt-6">
+                <Button variant="premium" className="w-full">
                   Learn More
                 </Button>
               </CardContent>
@@ -84,10 +106,21 @@ const Services = () => {
           ))}
         </div>
 
-        <div className="text-center mt-16">
-          <Button variant="cta" size="xl">
-            Schedule Free Consultation
-          </Button>
+        <div className="text-center bg-alpha-white rounded-2xl p-8 sm:p-12 shadow-elegant border border-alpha-blue/10">
+          <h3 className="text-2xl sm:text-3xl font-bold text-alpha-charcoal mb-4 sm:mb-6">
+            Ready to Protect What Matters Most?
+          </h3>
+          <p className="text-lg sm:text-xl text-alpha-grey mb-6 sm:mb-8 max-w-2xl mx-auto px-4">
+            Get a free consultation and discover how we can help secure your digital life.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button variant="cta" size="xl" className="px-8 sm:px-12 py-3 sm:py-4 text-base sm:text-lg">
+              Schedule Free Consultation
+            </Button>
+            <Button variant="premium" size="xl" className="px-8 sm:px-12 py-3 sm:py-4 text-base sm:text-lg">
+              Call (555) 123-ALPHA
+            </Button>
+          </div>
         </div>
       </div>
     </section>
