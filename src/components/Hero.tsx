@@ -12,17 +12,6 @@ const Hero = () => {
       
       {/* Content */}
       <div className="relative z-10 container mx-auto text-center max-w-6xl">
-        {/* Logo */}
-        <div className="flex justify-center mb-8 sm:mb-12">
-          <div className="relative p-4 sm:p-6 rounded-2xl bg-alpha-blue/10 border border-alpha-blue/20 backdrop-blur-sm">
-            <img 
-              src="/lovable-uploads/cba1914c-ea9c-4aa2-9469-0a9e79259b1c.png" 
-              alt="ALPHATECH Logo" 
-              className="h-12 w-12 sm:h-16 sm:w-16" 
-            />
-            <div className="absolute -top-1 -right-1 sm:-top-2 sm:-right-2 w-4 h-4 sm:w-6 sm:h-6 bg-alpha-blue rounded-full animate-pulse"></div>
-          </div>
-        </div>
         
         {/* Brand Name */}
         <div className="mb-6 sm:mb-8">
