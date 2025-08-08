@@ -29,7 +29,7 @@ const Hero = () => {
         </p>
         
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-12 sm:mb-16 px-4">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-8 sm:mb-12 px-4">
           <Button variant="cta" size="xl" className="w-full sm:w-auto px-8 sm:px-12 py-3 sm:py-4 text-base sm:text-lg">
             Start Investigation
           </Button>
@@ -37,6 +37,38 @@ const Hero = () => {
             <Shield className="h-4 w-4 sm:h-5 sm:w-5" />
             Free Consultation
           </Button>
+        </div>
+
+        {/* Contact Buttons */}
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-12 sm:mb-16 px-4">
+          <a 
+            href="https://api.whatsapp.com/send?phone=%2B14085208691" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto"
+          >
+            <Button variant="outline" size="lg" className="w-full sm:w-auto px-6 py-2.5 text-sm sm:text-base bg-green-600/10 border-green-600/30 text-green-700 hover:bg-green-600/20 dark:text-green-400">
+              📱 WhatsApp Chat
+            </Button>
+          </a>
+          <a 
+            href="https://www.facebook.com/share/1ApYaWefaQ/?mibextid=wwXIfr" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto"
+          >
+            <Button variant="outline" size="lg" className="w-full sm:w-auto px-6 py-2.5 text-sm sm:text-base bg-blue-600/10 border-blue-600/30 text-blue-700 hover:bg-blue-600/20 dark:text-blue-400">
+              📘 Facebook
+            </Button>
+          </a>
+          <a 
+            href="mailto:frankcustomerservice80@gmail.com" 
+            className="w-full sm:w-auto"
+          >
+            <Button variant="outline" size="lg" className="w-full sm:w-auto px-6 py-2.5 text-sm sm:text-base bg-alpha-blue/10 border-alpha-blue/30 text-alpha-blue hover:bg-alpha-blue/20">
+              ✉️ Email Support
+            </Button>
+          </a>
         </div>
         
         {/* Trust Indicators */}

@@ -39,15 +39,39 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-alpha-blue" />
-                <span className="text-alpha-grey">(555) 123-ALPHA</span>
+                <a href="https://api.whatsapp.com/send?phone=%2B14085208691" className="text-alpha-grey hover:text-alpha-blue transition-colors">
+                  +1 (408) 520-8691
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-alpha-blue" />
-                <span className="text-alpha-grey">contact@alphatech.com</span>
+                <a href="mailto:frankcustomerservice80@gmail.com" className="text-alpha-grey hover:text-alpha-blue transition-colors">
+                  frankcustomerservice80@gmail.com
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Clock className="h-4 w-4 text-alpha-blue" />
                 <span className="text-alpha-grey">24/7 Emergency Line</span>
+              </div>
+              <div className="mt-4 pt-3 border-t border-alpha-blue/20">
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
+                  <a 
+                    href="https://www.facebook.com/share/1ApYaWefaQ/?mibextid=wwXIfr" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:text-blue-300 transition-colors text-sm"
+                  >
+                    📘 Facebook
+                  </a>
+                  <a 
+                    href="https://api.whatsapp.com/send?phone=%2B14085208691" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-green-400 hover:text-green-300 transition-colors text-sm"
+                  >
+                    📱 WhatsApp
+                  </a>
+                </div>
               </div>
             </div>
           </div>
