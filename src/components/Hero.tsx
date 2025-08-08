@@ -1,14 +1,11 @@
 import { Button } from "@/components/ui/enhanced-button";
 import { Shield, Lock } from "lucide-react";
+import HeroBackground from "@/components/HeroBackground";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-alpha-light via-background to-alpha-light overflow-hidden px-4 sm:px-6">
-      {/* Modern geometric background */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-10 w-32 sm:w-72 h-32 sm:h-72 bg-alpha-blue rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-48 sm:w-96 h-48 sm:h-96 bg-alpha-blue rounded-full blur-3xl"></div>
-      </div>
+      <HeroBackground />
       
       {/* Content */}
       <div className="relative z-10 container mx-auto text-center max-w-6xl">
