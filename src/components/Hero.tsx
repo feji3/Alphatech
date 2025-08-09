@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/enhanced-button";
-import { Shield, Lock } from "lucide-react";
+import { Shield, Lock, MessageCircle, Facebook, Mail } from "lucide-react";
 import HeroBackground from "@/components/HeroBackground";
 
 const Hero = () => {
@@ -50,14 +50,17 @@ const Hero = () => {
         </div>
 
         {/* Contact Buttons */}
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-12 sm:mb-16 px-4">
+        <div className="flex flex-row gap-3 sm:gap-4 justify-center items-center mb-12 sm:mb-16 px-4">
           <a 
             href="https://api.whatsapp.com/send?phone=%2B14085208691" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="w-full sm:w-auto"
+            className="group"
           >
-            <Button variant="outline" size="lg" className="w-full sm:w-auto px-6 py-2.5 text-sm sm:text-base bg-green-600/10 border-green-600/30 text-green-700 hover:bg-green-600/20 dark:text-green-400">
+            <Button variant="outline" size="icon" className="sm:hidden h-12 w-12 bg-green-600/10 border-green-600/30 text-green-700 hover:bg-green-600/20 dark:text-green-400">
+              <MessageCircle className="h-5 w-5" />
+            </Button>
+            <Button variant="outline" size="lg" className="hidden sm:inline-flex px-6 py-2.5 text-sm sm:text-base bg-green-600/10 border-green-600/30 text-green-700 hover:bg-green-600/20 dark:text-green-400">
               📱 WhatsApp Chat
             </Button>
           </a>
@@ -65,17 +68,23 @@ const Hero = () => {
             href="https://www.facebook.com/share/1ApYaWefaQ/?mibextid=wwXIfr" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="w-full sm:w-auto"
+            className="group"
           >
-            <Button variant="outline" size="lg" className="w-full sm:w-auto px-6 py-2.5 text-sm sm:text-base bg-blue-600/10 border-blue-600/30 text-blue-700 hover:bg-blue-600/20 dark:text-blue-400">
+            <Button variant="outline" size="icon" className="sm:hidden h-12 w-12 bg-blue-600/10 border-blue-600/30 text-blue-700 hover:bg-blue-600/20 dark:text-blue-400">
+              <Facebook className="h-5 w-5" />
+            </Button>
+            <Button variant="outline" size="lg" className="hidden sm:inline-flex px-6 py-2.5 text-sm sm:text-base bg-blue-600/10 border-blue-600/30 text-blue-700 hover:bg-blue-600/20 dark:text-blue-400">
               📘 Facebook
             </Button>
           </a>
           <a 
             href="mailto:frankcustomerservice80@gmail.com" 
-            className="w-full sm:w-auto"
+            className="group"
           >
-            <Button variant="outline" size="lg" className="w-full sm:w-auto px-6 py-2.5 text-sm sm:text-base bg-alpha-blue/10 border-alpha-blue/30 text-alpha-blue hover:bg-alpha-blue/20">
+            <Button variant="outline" size="icon" className="sm:hidden h-12 w-12 bg-alpha-blue/10 border-alpha-blue/30 text-alpha-blue hover:bg-alpha-blue/20">
+              <Mail className="h-5 w-5" />
+            </Button>
+            <Button variant="outline" size="lg" className="hidden sm:inline-flex px-6 py-2.5 text-sm sm:text-base bg-alpha-blue/10 border-alpha-blue/30 text-alpha-blue hover:bg-alpha-blue/20">
               ✉️ Email Support
             </Button>
           </a>
