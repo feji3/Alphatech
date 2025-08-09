@@ -86,12 +86,13 @@ const Process = () => {
               All consultations are completely confidential and protected by attorney-client privilege. 
               Your privacy is our priority.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="cta" size="lg">
+            <div className="flex justify-center">
+              <Button 
+                variant="cta" 
+                size="lg"
+                onClick={() => window.open('https://api.whatsapp.com/send?phone=%2B14085208691', '_blank')}
+              >
                 Start Investigation Today
-              </Button>
-              <Button variant="premium" size="lg">
-                Call: (555) 123-TRUTH
               </Button>
             </div>
           </div>
