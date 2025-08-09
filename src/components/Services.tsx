@@ -98,9 +98,6 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
-                <Button variant="premium" className="w-full">
-                  Learn More
-                </Button>
               </CardContent>
             </Card>
           ))}
@@ -114,11 +111,13 @@ const Services = () => {
             Get a free consultation and discover how we can help secure your digital life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="cta" size="xl" className="px-8 sm:px-12 py-3 sm:py-4 text-base sm:text-lg">
+            <Button 
+              variant="cta" 
+              size="xl" 
+              className="px-8 sm:px-12 py-3 sm:py-4 text-base sm:text-lg"
+              onClick={() => window.open('https://api.whatsapp.com/send?phone=%2B14085208691', '_blank')}
+            >
               Schedule Free Consultation
-            </Button>
-            <Button variant="premium" size="xl" className="px-8 sm:px-12 py-3 sm:py-4 text-base sm:text-lg">
-              Call (555) 123-ALPHA
             </Button>
           </div>
         </div>

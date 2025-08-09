@@ -30,10 +30,20 @@ const Hero = () => {
         
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-8 sm:mb-12 px-4">
-          <Button variant="cta" size="xl" className="w-full sm:w-auto px-8 sm:px-12 py-3 sm:py-4 text-base sm:text-lg">
+          <Button 
+            variant="cta" 
+            size="xl" 
+            className="w-full sm:w-auto px-8 sm:px-12 py-3 sm:py-4 text-base sm:text-lg"
+            onClick={() => window.open('https://api.whatsapp.com/send?phone=%2B14085208691', '_blank')}
+          >
             Start Investigation
           </Button>
-          <Button variant="premium" size="xl" className="w-full sm:w-auto px-8 sm:px-12 py-3 sm:py-4 text-base sm:text-lg">
+          <Button 
+            variant="premium" 
+            size="xl" 
+            className="w-full sm:w-auto px-8 sm:px-12 py-3 sm:py-4 text-base sm:text-lg"
+            onClick={() => window.open('https://api.whatsapp.com/send?phone=%2B14085208691', '_blank')}
+          >
             <Shield className="h-4 w-4 sm:h-5 sm:w-5" />
             Free Consultation
           </Button>

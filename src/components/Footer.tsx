@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <Shield className="h-8 w-8 text-alpha-blue" />
+              <img src="/lovable-uploads/cba1914c-ea9c-4aa2-9469-0a9e79259b1c.png" alt="ALPHATECH Logo" className="h-8 w-8" />
               <span className="text-xl font-bold">ALPHATECH</span>
             </div>
             <p className="text-alpha-grey leading-relaxed">

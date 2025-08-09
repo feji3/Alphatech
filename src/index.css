@@ -39,16 +39,17 @@ All colors MUST be HSL.
     --radius: 0.5rem;
 
     /* ALPHATECH modern theme colors */
-    --alpha-blue: 210 50% 45%;
-    --alpha-charcoal: 210 15% 20%;
-    --alpha-grey: 210 10% 50%;
+    --alpha-blue: 208 34% 39%;
+    --alpha-charcoal: 0 0% 34%;
+    --alpha-grey: 0 0% 45%;
     --alpha-light: 210 5% 95%;
     --alpha-white: 0 0% 100%;
+    --alpha-accent: 210 60% 50%;
 
     /* Modern gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--alpha-blue)), hsl(210 60% 35%));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--alpha-blue)), hsl(var(--alpha-charcoal)));
     --gradient-card: linear-gradient(145deg, hsl(var(--alpha-white)), hsl(var(--alpha-light)));
-    --gradient-accent: linear-gradient(90deg, hsl(var(--alpha-blue)), hsl(210 60% 55%));
+    --gradient-accent: linear-gradient(90deg, hsl(var(--alpha-blue)), hsl(var(--alpha-accent)));
 
     /* Modern shadows */
     --shadow-elegant: 0 20px 40px -8px hsl(210 15% 20% / 0.1);
