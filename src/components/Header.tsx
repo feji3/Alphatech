@@ -20,16 +20,9 @@ const Header = () => {
           <a href="#about" className="text-alpha-grey hover:text-alpha-charcoal transition-colors text-sm xl:text-base">
             About
           </a>
-          <a href="#contact" className="text-alpha-grey hover:text-alpha-charcoal transition-colors text-sm xl:text-base">
-            Contact
-          </a>
         </nav>
 
-        <div className="flex items-center space-x-2 sm:space-x-4">
-          <Button variant="premium" size="sm" className="hidden sm:flex text-xs sm:text-sm px-3 sm:px-4">
-            <Phone className="h-3 w-3 sm:h-4 sm:w-4" />
-            24/7 Confidential
-          </Button>
+        <div className="flex items-center">
           <Button variant="cta" size="sm" className="text-xs sm:text-sm px-3 sm:px-4">
             Free Consultation
           </Button>
