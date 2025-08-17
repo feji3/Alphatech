@@ -78,7 +78,7 @@ const Hero = () => {
             </Button>
           </a>
           <a 
-            href="mailto:frankcustomerservice80@gmail.com" 
+            href="mailto:support@alphatechnologies.live" 
             className="group"
           >
             <Button variant="outline" size="icon" className="sm:hidden h-12 w-12 bg-alpha-blue/10 border-alpha-blue/30 text-alpha-blue hover:bg-alpha-blue/20">
